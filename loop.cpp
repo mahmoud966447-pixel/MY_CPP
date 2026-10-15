@@ -4,37 +4,65 @@ using namespace std;
 
 int main()
 {
-    int tall;
-    int num;
+    int part;
+    
+    cout << "Part: ";
+    cin >> part;
 
-    cout << "Tall :";
-    cin >> tall;
-
-    cout << "Numper :";
-    cin >> num;
-
-    for(int i = 0; i < tall; i++)
+    while (true)
     {
-        for(int z = 0; z < num; z++)
+        if (part == 1)
         {
-            for(int y = 0; y < (tall - i); y++)
+            int i;
+
+            cout << "Inter i value: ";
+            cin >> i;
+
+            do  // Do the frist with out check (doing before checkening).
             {
-                cout<<" ";
+                cout << "I is " << i << endl;
+                i++;
+            }while (i < 5);
+
+            break;
+        }
+
+        else if (part == 2)
+        {
+            for (int i = 1; i <= 3; i++)
+            {
+                for (int j = 1; j <= 3; j++)   // Some thing not important.
+                {
+                    cout << i * j << " ";
+                }
+                cout << endl;
             }
 
-            cout << "*";
+            break;
+        }
 
-            for(int x = 0; x < i; x++)
-            { 
-                cout << "**";
+        else if (part == 3)
+        {
+            int numpers[5] = {10, 20, 30, 40, 50}
+
+            for (int num : numpers)
+            {
+                cout << num << endl;
             }
 
-            for(int w = 0; w <  (tall - i); w++)
+            string name = "mahmoud";
+
+            for (char c : name)
             {
-                cout << " ";
+                cout << c << endl;
             }
         }
-        cout << endl;
-    }
 
+        else
+        {
+            cout << "Part " << part << " not fouded.";
+
+            continue;
+        }
+    }
 }
