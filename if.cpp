@@ -61,7 +61,7 @@ int main()
 
             default:
             {
-                cout << "Part " << part << " not founded." << endl;
+                cout << "Part " << part << " not founded." << "\n";
 
                 return true;
             }

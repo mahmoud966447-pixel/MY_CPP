@@ -60,7 +60,7 @@ int main()
 
         else
         {
-            cout << "Part " << part << " not fouded.";
+            cout << "Part " << part << " not fouded." << "\n";
 
             continue;
         }
