@@ -39,7 +39,6 @@ int main()
                 }
 
                 return false;
-                break;
             }
 
             case 2:
@@ -56,14 +55,11 @@ int main()
                 cout << ((time < 12 && age >= 18) ? "Good day." : (time < 18 && age >=18) ? "Good afternoon." : "Good evening.");
 
                 return false;
-                break;
             }
 
             default:
             {
                 cout << "Part " << part << " not founded." << "\n";
-
-                return true;
             }
         }
     }
