@@ -42,7 +42,7 @@ int main ()
                 cout << mycar1.brand << " " << mycar1.year << endl;
                 cout << mycar2.brand << " " << mycar2.year << endl;
 
-                break;
+                return false;
             }
 
             case 2 :
@@ -62,7 +62,7 @@ int main ()
                 cout << car1.brand << " " << car1.modle << " " << car1.year << "\n";
                 cout << car2.brand << " " << car2.modle << " " << car2.year << "\n";
 
-                break;
+                return false;
             }
 
             case 3 :
@@ -86,7 +86,8 @@ int main ()
                     cout << "Your car" << pr_info + 1 << " modle: " << cars[pr_info].modle << endl;
                     cout << "Your car" << pr_info + 1 << "  year: " << cars[pr_info].year << endl << endl;
                 }
-                break;
+                
+                return false;
             }
 
             case 4:
@@ -95,14 +96,11 @@ int main ()
 
                 cout << my_var << endl;
 
-                break;
+                return false;
             }
-
             default :
             {
                 cout << "Part " << part << " not fouded.\n";
-
-                continue;
             }
         }
     }
