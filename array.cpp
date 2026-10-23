@@ -4,13 +4,13 @@ using namespace std;
 
 int main ()
 {
-    int part;
-
-    cout << "Part: ";
-    cin >> part;
-
     while (true)
     {
+        int part;
+
+        cout << "Part: ";
+        cin >> part;
+
         switch (part)
         {
             case 1:
@@ -120,7 +120,7 @@ int main ()
 
             default:
             {
-                cout << "Part " << part << " not founded.";
+                cout << "Part " << part << " not founded.\n";
             }
         }
     }
