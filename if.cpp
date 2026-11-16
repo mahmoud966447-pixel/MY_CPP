@@ -9,7 +9,9 @@ int main()
     cout << "Part: ";
     cin >> part;
 
-    while (true)
+    bool contenue = true; 
+
+    while (contenue)
     {
         switch (part)
         {
@@ -38,7 +40,8 @@ int main()
                     cout << "\nx is smaller than y.\n";
                 }
 
-                return false;
+                contenue = false;
+                break;
             }
 
             case 2:
@@ -54,12 +57,15 @@ int main()
 
                 cout << ((time < 12 && age >= 18) ? "Good day." : (time < 18 && age >=18) ? "Good afternoon." : "Good evening.");
 
-                return false;
+                contenue = false;
+                break;
             }
 
             default:
             {
                 cout << "Part " << part << " not founded." << "\n";
+                contenue = true;
+                break;
             }
         }
     }
